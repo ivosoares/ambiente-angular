@@ -1,11 +1,11 @@
-<h1 class="text-success text-center">Live angular diretivas</h1>
+<h1 appMarcaTexto corDeFundo="red" corDoTexto="blue" class="text-center">Live angular diretivas</h1>
 
 <!-- Diretivas de Atributo -->
 <div
   [ngStyle]="{background: count < 5 ? 'red' : 'green'}"
   [ngClass]="{custom: count > 5}"
 >
-  <h2 class="text-center">Contador: {{ count }} </h2>
+  <h2 appMarcaTexto class="text-center">Contador: {{ count }} </h2>
 </div>
 
 <!-- Diretivas Estruturais -->
@@ -63,7 +63,7 @@
 
 
 <div class="col-4 mx-auto my-3">
-  <h3>{{ nome }}</h3>
+  <h3 appMarcaTexto corDeFundo="blue" corDoTexto="black">{{ nome }}</h3>
   <button class="btn btn-success col-4 mx-auto" (click)="clicou('Ivonaldo')">Clique</button>
 </div>
 
